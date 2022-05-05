@@ -1,0 +1,239 @@
+@import 'reasonable-colors/reasonable-colors.scss';
+
+$white: #fff;
+
+$rc-shade-count: 6;
+
+$rc-colors: (
+  'gray': (
+    $color-gray-1,
+    $color-gray-2,
+    $color-gray-3,
+    $color-gray-4,
+    $color-gray-5,
+    $color-gray-6
+  ),
+  'rose': (
+    $color-rose-1,
+    $color-rose-2,
+    $color-rose-3,
+    $color-rose-4,
+    $color-rose-5,
+    $color-rose-6
+  ),
+  'raspberry': (
+    $color-raspberry-1,
+    $color-raspberry-2,
+    $color-raspberry-3,
+    $color-raspberry-4,
+    $color-raspberry-5,
+    $color-raspberry-6
+  ),
+  'red': (
+    $color-red-1,
+    $color-red-2,
+    $color-red-3,
+    $color-red-4,
+    $color-red-5,
+    $color-red-6
+  ),
+  'orange': (
+    $color-orange-1,
+    $color-orange-2,
+    $color-orange-3,
+    $color-orange-4,
+    $color-orange-5,
+    $color-orange-6
+  ),
+  'cinnamon': (
+    $color-cinnamon-1,
+    $color-cinnamon-2,
+    $color-cinnamon-3,
+    $color-cinnamon-4,
+    $color-cinnamon-5,
+    $color-cinnamon-6
+  ),
+  'amber': (
+    $color-amber-1,
+    $color-amber-2,
+    $color-amber-3,
+    $color-amber-4,
+    $color-amber-5,
+    $color-amber-6
+  ),
+  'yellow': (
+    $color-yellow-1,
+    $color-yellow-2,
+    $color-yellow-3,
+    $color-yellow-4,
+    $color-yellow-5,
+    $color-yellow-6
+  ),
+  'lime': (
+    $color-lime-1,
+    $color-lime-2,
+    $color-lime-3,
+    $color-lime-4,
+    $color-lime-5,
+    $color-lime-6
+  ),
+  'chartreuse': (
+    $color-chartreuse-1,
+    $color-chartreuse-2,
+    $color-chartreuse-3,
+    $color-chartreuse-4,
+    $color-chartreuse-5,
+    $color-chartreuse-6
+  ),
+  'green': (
+    $color-green-1,
+    $color-green-2,
+    $color-green-3,
+    $color-green-4,
+    $color-green-5,
+    $color-green-6
+  ),
+  'emerald': (
+    $color-emerald-1,
+    $color-emerald-2,
+    $color-emerald-3,
+    $color-emerald-4,
+    $color-emerald-5,
+    $color-emerald-6
+  ),
+  'aquamarine': (
+    $color-aquamarine-1,
+    $color-aquamarine-2,
+    $color-aquamarine-3,
+    $color-aquamarine-4,
+    $color-aquamarine-5,
+    $color-aquamarine-6
+  ),
+  'teal': (
+    $color-teal-1,
+    $color-teal-2,
+    $color-teal-3,
+    $color-teal-4,
+    $color-teal-5,
+    $color-teal-6
+  ),
+  'cyan': (
+    $color-cyan-1,
+    $color-cyan-2,
+    $color-cyan-3,
+    $color-cyan-4,
+    $color-cyan-5,
+    $color-cyan-6
+  ),
+  'powder': (
+    $color-powder-1,
+    $color-powder-2,
+    $color-powder-3,
+    $color-powder-4,
+    $color-powder-5,
+    $color-powder-6
+  ),
+  'sky': (
+    $color-sky-1,
+    $color-sky-2,
+    $color-sky-3,
+    $color-sky-4,
+    $color-sky-5,
+    $color-sky-6
+  ),
+  'cerulean': (
+    $color-cerulean-1,
+    $color-cerulean-2,
+    $color-cerulean-3,
+    $color-cerulean-4,
+    $color-cerulean-5,
+    $color-cerulean-6
+  ),
+  'azure': (
+    $color-azure-1,
+    $color-azure-2,
+    $color-azure-3,
+    $color-azure-4,
+    $color-azure-5,
+    $color-azure-6
+  ),
+  'blue': (
+    $color-blue-1,
+    $color-blue-2,
+    $color-blue-3,
+    $color-blue-4,
+    $color-blue-5,
+    $color-blue-6
+  ),
+  'indigo': (
+    $color-indigo-1,
+    $color-indigo-2,
+    $color-indigo-3,
+    $color-indigo-4,
+    $color-indigo-5,
+    $color-indigo-6
+  ),
+  'violet': (
+    $color-violet-1,
+    $color-violet-2,
+    $color-violet-3,
+    $color-violet-4,
+    $color-violet-5,
+    $color-violet-6
+  ),
+  'purple': (
+    $color-purple-1,
+    $color-purple-2,
+    $color-purple-3,
+    $color-purple-4,
+    $color-purple-5,
+    $color-purple-6
+  ),
+  'magenta': (
+    $color-magenta-1,
+    $color-magenta-2,
+    $color-magenta-3,
+    $color-magenta-4,
+    $color-magenta-5,
+    $color-magenta-6
+  ),
+  'pink': (
+    $color-pink-1,
+    $color-pink-2,
+    $color-pink-3,
+    $color-pink-4,
+    $color-pink-5,
+    $color-pink-6
+  )
+);
+
+@each $rc-color-name, $rc-color in $rc-colors {
+
+  .button.is-rc-#{$rc-color-name} {
+    color: $white;
+    background-color: nth($rc-color, 3);
+
+    &.is-hovered,
+    &.is-focused,
+    &:hover,
+    &:focus {
+      background-color: nth($rc-color, 4);
+    }
+
+    &.is-active,
+    &:active {
+      background-color: nth($rc-color, 5);
+    }
+  }
+
+  @for $rc-shade from 1 through $rc-shade-count {
+
+    .has-text-rc-#{$rc-color-name}-#{$rc-shade} {
+      color: nth($rc-color, $rc-shade) !important;
+    }
+
+    .has-background-rc-#{$rc-color-name}-#{$rc-shade} {
+      background-color: nth($rc-color, $rc-shade) !important;
+    }
+  }
+}

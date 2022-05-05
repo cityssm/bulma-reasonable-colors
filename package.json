@@ -1,0 +1,25 @@
+{
+  "name": "@cityssm/bulma-reasonable-colors",
+  "version": "0.1.0",
+  "description": "CSS classes for using reasonable-colors with Bulma",
+  "main": "bulma-reasonable-colors.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/bulma-reasonable-colors.git"
+  },
+  "keywords": [
+    "bulma"
+  ],
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/bulma-reasonable-colors/issues"
+  },
+  "homepage": "https://github.com/cityssm/bulma-reasonable-colors#readme",
+  "devDependencies": {
+    "reasonable-colors": "^0.4.0"
+  }
+}
