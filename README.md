@@ -1,7 +1,7 @@
 # bulma-reasonable-colors
 
 CSS classes for using
-[reasonable-colors](https://reasonable.work/colors/)
+[Reasonable Colors](https://reasonable.work/colors/)
 with
 [Bulma](https://bulma.io/).
 
@@ -16,8 +16,18 @@ with
 
 ## Usage
 
+Download the SCSS, download the minified CSS, or install from NPM.
+
+```bash
+npm install @cityssm/bulma-reasonable-colors
+```
+
 To avoid collisions with future Bulma updates,
 all class names include `rc-` before the color name and shade.
+
+The color palate is available on the
+[Reasonable Colors](https://reasonable.work/colors/#colors)
+website.
 
 For example, to set the text color to the fourth shade of teal,
 use the class `.has-text-rc-teal-4`.
