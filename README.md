@@ -26,4 +26,4 @@ use the class `.has-text-rc-teal-4`.
 
 ## In the Works
 
--   Button colors, panel colors, and other Bulma elements and components.
+-   Alert colors, navbar colors, panel colors, and other Bulma elements and components.

@@ -1,5 +1,7 @@
 @import 'reasonable-colors/reasonable-colors.scss';
 
+$bulma-button-focus-box-shadow-size: 0 0 0 0.125em;
+
 $white: #fff;
 
 $rc-shade-count: 6;
@@ -211,18 +213,65 @@ $rc-colors: (
 
   .button.is-rc-#{$rc-color-name} {
     color: $white;
-    background-color: nth($rc-color, 3);
+    background-color: nth($rc-color, 4);
+    border-color: transparent;
 
     &.is-hovered,
     &.is-focused,
     &:hover,
     &:focus {
-      background-color: nth($rc-color, 4);
+      background-color: nth($rc-color, 5);
     }
 
     &.is-active,
     &:active {
-      background-color: nth($rc-color, 5);
+      background-color: nth($rc-color, 6);
+    }
+
+    &.is-focused,
+    &:focus {
+      border-color: nth($rc-color, 6);
+      &:not(:active) {
+        box-shadow: $bulma-button-focus-box-shadow-size rgba(nth($rc-color, 4), 0.25);
+      }
+    }
+
+    &.is-light {
+      color: nth($rc-color, 5);
+      background-color: nth($rc-color, 1);
+
+      &.is-hovered,
+      &.is-focused,
+      &:hover,
+      &:focus {
+        background-color: nth($rc-color, 2);
+      }
+    }
+
+    &.is-outlined {
+      color: nth($rc-color, 4);
+      background-color: transparent;
+      border-color: nth($rc-color, 4);
+
+      &.is-hovered,
+      &.is-focused,
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: nth($rc-color, 4);
+      }
+    }
+
+    &.is-inverted {
+      color: nth($rc-color, 4);
+      background-color: $white;
+
+      &.is-hovered,
+      &.is-focused,
+      &:hover,
+      &:focus {
+        background-color: nth($rc-color, 1);
+      }
     }
   }
 
