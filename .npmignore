@@ -7,3 +7,4 @@ test/
 .gitignore
 .npmignore
 .sass-lint.yml
+sample.png
