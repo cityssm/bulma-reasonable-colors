@@ -5,6 +5,10 @@ CSS classes for using
 with
 [Bulma](https://bulma.io/).
 
+![Sample Buttons](sample.png)
+
+[View the test page](https://cityssm.github.io/bulma-reasonable-colors/test/index.htm) for more examples.
+
 ## Features
 
 -   Includes Bulma-like class names for all six shades of all 25 colors in the reasonable-colors palette.
