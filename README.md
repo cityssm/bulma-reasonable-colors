@@ -16,10 +16,16 @@ with
 
 ## Usage
 
-Download the SCSS, download the minified CSS, or install from NPM.
+Download the SCSS, download the minified CSS, link to a CDN,
+or install from NPM.
 
 ```bash
 npm install @cityssm/bulma-reasonable-colors
+```
+
+```html
+<link rel="stylesheet" href="path/to/bulma.min.css">
+<link rel="stylesheet" href="path/to/bulma-reasonable-colors.min.css">
 ```
 
 To avoid collisions with future Bulma updates,
